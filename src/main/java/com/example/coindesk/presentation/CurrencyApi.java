@@ -24,11 +24,9 @@ import javax.validation.Valid;
 public class CurrencyApi {
 
     private final CurrencyService currencyService;
-    private final CoinDeskService coinDeskService;
 
     public CurrencyApi(CurrencyService currencyService, com.example.coindesk.application.CoinDeskService coinDeskService) {
         this.currencyService = currencyService;
-        this.coinDeskService = coinDeskService;
     }
 
     @PostMapping("/")
